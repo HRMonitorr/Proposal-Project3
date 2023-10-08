@@ -1,4 +1,4 @@
-import {setInner,addInner } from "https://jscroot.github.io/element/croot.js";
+import { addInner } from "https://jscroot.github.io/element/croot.js";
 import { LatarBelakang, TitleTemplate, paragrafbutir } from "../template/template.js";
 
 export function IsiTitle(value){
@@ -17,14 +17,14 @@ export function isiTujuan(value){
 
 export function isiLatarBelakang(value){
     let content=LatarBelakang.replace("#latarbelakang#",value.introduction);
-    console.log(content);
+    // console.log(content);
     addInner("latarbelakang", content);
 }
 
 export function TujuanAbout(value){
     value.tujuan.butir.forEach(element => {
         let content = LatarBelakang.replace("#latarbelakang#",element);
-        console.log(element);
+        // console.log(element);
         addInner("tujuan", content);
     });
 }
