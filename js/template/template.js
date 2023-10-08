@@ -24,6 +24,9 @@ export let LatarBelakang = `
 export let DeskripsiAPk = `             
  <p class="mb-10 subtitle has-text-white has-mw-lg mx-auto" style="text-align: justify;">#deskripsi#</p>
 `
+
+export let inpogrpc = `<img src="#gambar#" alt="" width="400" height="600">
+`
 export let CardTemplate = `
 <br><br>
 <div><b>Name:</b>
