@@ -3,7 +3,8 @@ export let TitleTemplate = `
 </br>
 `
 export let JSONlink = 'https://raw.githubusercontent.com/HRMonitorr/Proposal-Project3/main/json/latarproposal.json'
-export let JSONTeams = 'https://raw.githubusercontent.com/HRMonitorr/Proposal-Project3/main/json/teams.json'
+export let JSONTeams = 'https://raw.githubusercontent.com/HRMonitorr/Proposal-Project3/main/json/jsonharis.json'
+export let JSONrofi = 'https://raw.githubusercontent.com/HRMonitorr/Proposal-Project3/main/json/jsonrofi.json'
 
 export let CardTujuan = `<div class="has-background-white p-8" style="border-radius: 4px;">
 <div class="is-relative is-inline-block mb-8">

@@ -29,31 +29,18 @@ export function TujuanAbout(value){
         addInner("tujuan", content);
     });
 }
-export function ImgTeams(value){
-    let content=CardTemplate.replace("#imgUrl#",value.imgurl);
-    console.log(content);
-    addInner("cardnya", content);
+export function Data1Loop(value){
+        let content=CardTemplate.replace("#imgUrl#",value.imgurl).replace("#nama#",value.nama).replace("#npm#",value.npm).replace("#kelas#",value.kelas);
+        console.log(value);
+        addInner("cardnya", content);
+
 }
 
-export function NamaTeams(value){
-    let content=CardTemplate.replace("#nama#",value.nama);
-    console.log(content);
+export function Data2Loop(value){
+    let content=CardTemplate.replace("#imgUrl#",value.imgurl).replace("#nama#",value.nama).replace("#npm#",value.npm).replace("#kelas#",value.kelas);
+    console.log(value);
     addInner("cardnya", content);
 }
-
-export function NpmTeams(value){
-    let content=CardTemplate.replace("#npm#",value.npm);
-    console.log(content);
-    addInner("cardnya", content);
-}
-export function KelasTeams(value){
-    let content=CardTemplate.replace("#kelas#",value.kelas);
-    console.log(content);
-    addInner("cardnya", content);
-}
-
-
-
 
 export function responseData(result){
     IsiTitle(result);
@@ -66,8 +53,9 @@ export function responseLatarbelakang(result){
 }
 
 export function responseTeam(result){
-  ImgTeams(result);
-  NamaTeams(result);
-  NpmTeams(result);
-  KelasTeams(result);
+  Data1Loop(result);
+}
+
+export function ResponseRofi(result){
+    Data2Loop(result);
 }

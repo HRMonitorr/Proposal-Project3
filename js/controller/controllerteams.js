@@ -1,5 +1,6 @@
 import { get } from "https://jscroot.github.io/api/croot.js";
-import { responseTeam} from "../config/config.js";
-import { JSONTeams } from "../template/template.js";
+import { ResponseRofi, responseTeam} from "../config/config.js";
+import { JSONTeams, JSONrofi } from "../template/template.js";
 
 get(JSONTeams, responseTeam);
+get(JSONrofi, ResponseRofi);
