@@ -17,10 +17,7 @@
       "Javascript",
       "Go Programming Language",
       "Github"
-    ],
-    "isi" : [
-
     ]
   },
-  "" : ""
+  "deskripsi" : "Human Resource (HR) merupakan salah satu bagian penting dari sebuah perusahaan. Akan tetapi dalam sebuah perusahaan tentunya diperlukan `reward` untuk para pegawai yang bekerja sesuai dengan tupoksinya. Agar Reward yang diberikan sesuai dengan apa yang dikerjakan maka dibutuhkan sebuah aplikasi yang dapat memonitoring kinerja dan menghitung reward berdasarkan kriteria tertentu. Pada Project kali ini kami akan membuat sebuah aplikasi yang akan memonitoring kinerja seorang pegawai berdasarkan kinerja dari issue dan commit yang dilakukan oleh pegawai tersebut. Segala kebutuhan komputasi dalam aplikasi akan dibangun menggunakan Javascript, dan GO program dengan Framework Fiber."
 }
