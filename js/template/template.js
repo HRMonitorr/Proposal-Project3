@@ -21,7 +21,6 @@ export let LatarBelakang = `
 <p class="mb-10 subtitle has-text-white has-mw-lg mx-auto" style="text-align: justify;">#latarbelakang#</p>
 `
 export let CardTemplate = `
-<img id="#gambar#" src="" alt="#gambar#" class="w-48 h-48 rounded-full" onclick="zoomIn()">
 </div>
 <br><br>
 <div class="mt-2">
@@ -36,12 +35,5 @@ export let CardTemplate = `
 <div><b>NPM:</b>
     <div>#npm#</div>
 </div>
-</div>
-<br><br><br>
-<div class="social-icons">
-<a href="#" class="icon"><i class="fa fa-facebook"></i></a>
-<a href="#" class="icon"><i class="fa fa-twitter"></i></a>
-<a href="#" class="icon"><i class="fa fa-linkedin"></i></a>
-<a href="#" class="icon"><i class="fa fa-instagram"></i></a>
 </div>
 `

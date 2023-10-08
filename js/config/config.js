@@ -32,14 +32,14 @@ export function TujuanAbout(value){
 export function Data1Loop(value){
         let content=CardTemplate.replace("#imgUrl#",value.imgurl).replace("#nama#",value.nama).replace("#npm#",value.npm).replace("#kelas#",value.kelas);
         console.log(value);
-        addInner("cardnya", content);
+        addInner("cardnya1", content);
 
 }
 
 export function Data2Loop(value){
     let content=CardTemplate.replace("#imgUrl#",value.imgurl).replace("#nama#",value.nama).replace("#npm#",value.npm).replace("#kelas#",value.kelas);
     console.log(value);
-    addInner("cardnya", content);
+    addInner("cardnya2", content);
 }
 
 export function responseData(result){
