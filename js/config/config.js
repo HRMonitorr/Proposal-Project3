@@ -178,6 +178,25 @@ export function GetRandomCounter(){
     return currentCounter;
 }
 
+export function GetDataForm(){
+            // Ambil nilai dari input nama dan textarea kritik
+            const name = document.querySelector("#name").value;
+            const critics = document.querySelector("#critic").value;
+            console.log(critics)
+    
+            // Buat objek data yang akan dikirim ke server
+            const data = {
+                name: name,
+                critics: critics
+            };
+            return data
+}
+
+export function AlertPost(value){
+    alert(value.message + "\nterima kasih sudah memberikan kritik dan sarannya")
+    window.location.reload();
+}
+
 export function responseData(result){
     IsiTitle(result);
     isiTujuan(result);
@@ -208,4 +227,8 @@ export function ResponseRofi(result){
 export function ProfilePicture(result){
     profilerofi(result);
     profileharis(result);
+}
+
+export function ResponsePost(result) {
+    AlertPost(result);
 }
