@@ -1,5 +1,5 @@
 import {setInner,addInner } from "https://jscroot.github.io/element/croot.js";
-import { CardTemplate, CardTujuan, DeskripsiAPk, LatarBelakang, TitleTemplate, teknologiyangdigunakan } from "../template/template.js";
+import { CardTemplate, CardTujuan, DeskripsiAPk, LatarBelakang, TitleTemplate, inpogrpc, teknologiyangdigunakan } from "../template/template.js";
 
 export function IsiTitle(value){
     let content=TitleTemplate.replace("#title#",value.title);
@@ -109,6 +109,12 @@ export function Data2Loop(value){
     addInner("cardnya2", content);
 }
 
+export function Infogrpc(value) {
+    let content=inpogrpc.replace("#gambar#",value.infographic);
+    // console.log(content);
+    addInner("info", content);
+}
+
 export function GetRandomImage() {
     let image = [
         "acros-assets/icons/features/auth.svg",
@@ -141,6 +147,7 @@ export function responseData(result){
     isiTujuan(result);
     Teknologiisi(result);
     DeskripsiAplikasi(result);
+    Infogrpc(result)
     // Manfaatisi(result)
 }
 
