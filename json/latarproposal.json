@@ -19,5 +19,18 @@
       "Go Programming Language",
       "Github"
     ]
-  }
+  },
+  "manfaat" : [
+    "1. Pemantauan Kinerja yang Lebih Akurat: Aplikasi ini akan memberikan pemantauan kinerja yang lebih akurat bagi karyawan dengan menggunakan data dari GitHub API. Ini memungkinkan perusahaan untuk mengukur kontribusi karyawan dalam pengembangan perangkat lunak dengan lebih tepat.",
+
+    "2. Pengambilan Keputusan yang Lebih Baik: Dengan informasi yang lebih lengkap tentang aktivitas pengembangan karyawan, manajer SDM dapat membuat keputusan yang lebih baik terkait dengan promosi, penugasan proyek, dan pengembangan karier.",
+    
+    "3. Identifikasi Potensi Karyawan: Aplikasi ini membantu mengidentifikasi potensi dan keterampilan unik karyawan, memungkinkan perusahaan untuk menempatkan mereka dalam peran yang sesuai dengan bakat mereka dan mengembangkan talenta internal.",
+    
+    "4. Peningkatan Kolaborasi: Integrasi GitHub API memungkinkan tim SDM untuk berkolaborasi lebih erat dengan tim pengembangan, meningkatkan komunikasi, serta memfasilitasi pemahaman yang lebih baik tentang proyek yang sedang dikerjakan.",
+    
+    "5. Pengembangan Keterampilan: Data yang diberikan oleh GitHub API memungkinkan perusahaan merancang program pelatihan yang disesuaikan dengan kebutuhan karyawan, membantu mereka meningkatkan keterampilan pengembangan perangkat lunak.",
+    
+    "6. Transparansi dan Akuntabilitas: Aplikasi ini meningkatkan transparansi dalam penugasan proyek dan pengembangan karyawan, menghasilkan rasa tanggung jawab yang lebih tinggi dan akuntabilitas dalam tim."
+  ]
 }
