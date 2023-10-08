@@ -25,6 +25,8 @@ export let DeskripsiAPk = `
  <p class="mb-10 subtitle has-text-white has-mw-lg mx-auto" style="text-align: justify;">#deskripsi#</p>
 `
 
+export let TeamsProfile = `<img id="gambar1" src="#profile#" alt="Gambar" class="w-48 h-48 rounded-full">`
+
 export let inpogrpc = `<img src="#gambar#" alt="" width="400" height="600">
 `
 export let CardTemplate = `

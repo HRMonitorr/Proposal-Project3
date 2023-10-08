@@ -1,5 +1,5 @@
 import {setInner,addInner } from "https://jscroot.github.io/element/croot.js";
-import { CardTemplate, CardTujuan, DeskripsiAPk, LatarBelakang, TitleTemplate, inpogrpc, teknologiyangdigunakan } from "../template/template.js";
+import { CardTemplate, CardTujuan, DeskripsiAPk, LatarBelakang, TeamsProfile, TitleTemplate, inpogrpc, teknologiyangdigunakan } from "../template/template.js";
 
 export function IsiTitle(value){
     let content=TitleTemplate.replace("#title#",value.title);
@@ -32,6 +32,14 @@ export function TujuanAbout(value){
         let content = LatarBelakang.replace("#latarbelakang#",element);
         // console.log(element);
         addInner("tujuan", content);
+    });
+}
+
+export function LuaranonAbout(value){
+    value.luaran.forEach(element => {
+        let content = LatarBelakang.replace("#latarbelakang#",element);
+        // console.log(element);
+        addInner("luaran", content);
     });
 }
 
@@ -87,12 +95,29 @@ export function TeknologionAbout(value){
         });
 }
 
+export function RumusanMasalah(value){
+    value.rumusan.forEach(element => {
+          let content =LatarBelakang.replace("#latarbelakang#",element);
+        //   console.log(element);
+          addInner("rumusan", content);
+        });
+}
+
+
 
 export function ManfaatonAbout(value){
     value.manfaat.forEach(element => {
           let content =LatarBelakang.replace("#latarbelakang#",element);
         //   console.log(element);
           addInner("manfaat", content);
+        });
+}
+
+export function KegunaanOnAbout(value){
+    value.kegunaan.forEach(element => {
+          let content =LatarBelakang.replace("#latarbelakang#",element);
+        //   console.log(element);
+          addInner("kegunaan", content);
         });
 }
 
@@ -113,6 +138,17 @@ export function Infogrpc(value) {
     let content=inpogrpc.replace("#gambar#",value.infographic);
     // console.log(content);
     addInner("info", content);
+}
+export function profilerofi(value) {
+    let content=TeamsProfile.replace("#profile#",value.profilerofi);
+    console.log(value.profilerofi);
+    addInner("gambarrofi", content);
+}
+
+export function profileharis(value) {
+    let content=TeamsProfile.replace("#profile#",value.profileharis);
+    console.log(value.profilerofi);
+    addInner("gambarharis", content);
 }
 
 export function GetRandomImage() {
@@ -156,6 +192,9 @@ export function responseLatarbelakang(result){
     TujuanAbout(result)
     TeknologionAbout(result)
     ManfaatonAbout(result)
+    LuaranonAbout(result)
+    RumusanMasalah(result)
+    KegunaanOnAbout(result)
 }
 
 export function responseTeam(result){
@@ -164,4 +203,9 @@ export function responseTeam(result){
 
 export function ResponseRofi(result){
     Data2Loop(result);
+}
+
+export function ProfilePicture(result){
+    profilerofi(result);
+    profileharis(result);
 }
