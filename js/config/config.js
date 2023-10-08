@@ -13,7 +13,6 @@ export function isiTujuan(value){
         // console.log(value.tujuan);
         addInner("cardtujuan", content);
     });
-
 }
 
 export function DeskripsiAplikasi(value) {
@@ -24,14 +23,14 @@ export function DeskripsiAplikasi(value) {
 
 export function isiLatarBelakang(value){
     let content=LatarBelakang.replace("#latarbelakang#",value.introduction);
-    console.log(content);
+    // console.log(content);
     addInner("latarbelakang", content);
 }
 
 export function TujuanAbout(value){
     value.tujuan.butir.forEach(element => {
         let content = LatarBelakang.replace("#latarbelakang#",element);
-        console.log(element);
+        // console.log(element);
         addInner("tujuan", content);
     });
 }
@@ -44,30 +43,69 @@ export function Teknologiisi(value){
     value.teori.title.forEach(element => {
       if (loopCount < maxLoopCount) { 
         let content = teknologiyangdigunakan.replace("#image#", GetRandomImage()).replace("#tekno#", element);
-        console.log(element);
+        // console.log(element);
         addInner("teknologi", content);
     
         loopCount++;
       } else if (currentIteration >= 4) {
         let content = teknologiyangdigunakan.replace("#image#", GetRandomImage()).replace("#tekno#", element);
-        console.log(element);
+        // console.log(element);
         addInner("teknologianother", content);
       }
   
       currentIteration++; 
     });
 }
+
+export function Manfaatisi(value){
+    const maxLoopCount = 3; 
+    let loopCount = 0; 
+    let currentIteration = 1; 
+  
+    value.manfaat.forEach(element => {
+      if (loopCount < maxLoopCount) { 
+        let content = teknologiyangdigunakan.replace("#image#", GetRandomImage()).replace("#tekno#", element);
+        // console.log(element);
+        addInner("manfaatprj", content);
+    
+        loopCount++;
+      } else if (currentIteration >= 4) {
+        let content = teknologiyangdigunakan.replace("#image#", GetRandomImage()).replace("#tekno#", element);
+        // console.log(element);
+        addInner("manfaatprj2", content);
+      }
+  
+      currentIteration++; 
+    });
+}
+
+export function TeknologionAbout(value){
+    value.teori.title.forEach(element => {
+          let content =LatarBelakang.replace("#latarbelakang#",element);
+        //   console.log(element);
+          addInner("teknologiyg", content);
+        });
+}
+
+
+export function ManfaatonAbout(value){
+    value.manfaat.forEach(element => {
+          let content =LatarBelakang.replace("#latarbelakang#",element);
+        //   console.log(element);
+          addInner("manfaat", content);
+        });
+}
+
 export function Data1Loop(value){
         let content=CardTemplate.replace("#imgUrl#",value.imgurl).replace("#nama#",value.nama).replace("#npm#",value.npm).replace("#kelas#",value.kelas);
         console.log(value);
-        // console.log(GetRandomImage)
         addInner("cardnya1", content);
 
 }
 
 export function Data2Loop(value){
     let content=CardTemplate.replace("#imgUrl#",value.imgurl).replace("#nama#",value.nama).replace("#npm#",value.npm).replace("#kelas#",value.kelas);
-    console.log(value);
+    // console.log(value);
     addInner("cardnya2", content);
 }
 
@@ -103,11 +141,14 @@ export function responseData(result){
     isiTujuan(result);
     Teknologiisi(result);
     DeskripsiAplikasi(result);
+    Manfaatisi(result)
 }
 
 export function responseLatarbelakang(result){
     isiLatarBelakang(result);
     TujuanAbout(result)
+    TeknologionAbout(result)
+    ManfaatonAbout(result)
 }
 
 export function responseTeam(result){
