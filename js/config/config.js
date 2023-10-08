@@ -1,5 +1,5 @@
 import {setInner,addInner } from "https://jscroot.github.io/element/croot.js";
-import { CardTujuan, LatarBelakang, TitleTemplate } from "../template/template.js";
+import { LatarBelakang, TitleTemplate, paragrafbutir } from "../template/template.js";
 
 export function IsiTitle(value){
     let content=TitleTemplate.replace("#title#",value.title);
@@ -8,12 +8,11 @@ export function IsiTitle(value){
 }
 
 export function isiTujuan(value){
-    value.tujuan.forEach(element => {
-        let content = CardTujuan.replace("#tujuan#",element);
-        // console.log(value.tujuan);
-        addInner("cardtujuan", content);
-    });
-
+        value.tujuan.butir.forEach(element => {
+           let content = paragrafbutir.replace("#tujuan#",element);
+            console.log(element);
+            addInner("butir", content);           
+        });
 }
 
 export function isiLatarBelakang(value){
@@ -23,7 +22,7 @@ export function isiLatarBelakang(value){
 }
 
 export function TujuanAbout(value){
-    value.tujuan.forEach(element => {
+    value.tujuan.butir.forEach(element => {
         let content = LatarBelakang.replace("#latarbelakang#",element);
         console.log(element);
         addInner("tujuan", content);
