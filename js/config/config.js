@@ -141,7 +141,7 @@ export function responseData(result){
     isiTujuan(result);
     Teknologiisi(result);
     DeskripsiAplikasi(result);
-    Manfaatisi(result)
+    // Manfaatisi(result)
 }
 
 export function responseLatarbelakang(result){
