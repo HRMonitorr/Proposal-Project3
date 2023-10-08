@@ -13,7 +13,7 @@ export let CardTujuan = `<div class="has-background-white p-8" style="border-rad
     <span class="is-absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%)">1</span>
   </span>
 </div>
-<h5 class="mb-4 title is-size-5 has-text-weight-medium pr-8-widescreen">Tujuan dari Project ini adalah:</h5>
+<h5 class="mb-4 title is-size-5 has-text-weight-medium pr-8-widescreen">Tujuan counter:</h5>
 <p class="has-text-grey-darker pr-10-widescreen">#tujuan#</p>
 </div>`
 
@@ -34,3 +34,9 @@ export let CardTemplate = `
     <div>#npm#</div>
 </div>
 `
+
+export let teknologiyangdigunakan = `            
+<div class="column mb-12 mb-0-tablet">
+<img class="mb-8" src="#image#" alt="">
+<h5 class="mb-4 title is-size-5 has-text-weight-medium">#tekno#</h5>
+</div>`
