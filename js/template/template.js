@@ -20,6 +20,10 @@ export let CardTujuan = `<div class="has-background-white p-8" style="border-rad
 export let LatarBelakang = `                
 <p class="mb-10 subtitle has-text-white has-mw-lg mx-auto" style="text-align: justify;">#latarbelakang#</p>
 `
+
+export let DeskripsiAPk = `             
+ <p class="mb-10 subtitle has-text-white has-mw-lg mx-auto" style="text-align: justify;">#deskripsi#</p>
+`
 export let CardTemplate = `
 <br><br>
 <div><b>Name:</b>

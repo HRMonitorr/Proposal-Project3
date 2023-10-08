@@ -1,5 +1,5 @@
 import {setInner,addInner } from "https://jscroot.github.io/element/croot.js";
-import { CardTemplate, CardTujuan, LatarBelakang, TitleTemplate, teknologiyangdigunakan } from "../template/template.js";
+import { CardTemplate, CardTujuan, DeskripsiAPk, LatarBelakang, TitleTemplate, teknologiyangdigunakan } from "../template/template.js";
 
 export function IsiTitle(value){
     let content=TitleTemplate.replace("#title#",value.title);
@@ -14,6 +14,12 @@ export function isiTujuan(value){
         addInner("cardtujuan", content);
     });
 
+}
+
+export function DeskripsiAplikasi(value) {
+    let content=DeskripsiAPk.replace("#deskripsi#", value.deskripsi);
+    // console.log(value.deskripsi);
+    addInner("deskripsiapk", content);
 }
 
 export function isiLatarBelakang(value){
@@ -95,7 +101,8 @@ export function GetRandomCounter(){
 export function responseData(result){
     IsiTitle(result);
     isiTujuan(result);
-    Teknologiisi(result)
+    Teknologiisi(result);
+    DeskripsiAplikasi(result);
 }
 
 export function responseLatarbelakang(result){
