@@ -2,7 +2,7 @@ export let TitleTemplate = `
 <h2 class="has-text-white has-mw-xl title is-size-2">#title#</h2>
 </br>
 `
-export let JSONlink = '../../json/latarproposal.json'
+export let JSONlink = 'https://raw.githubusercontent.com/HRMonitorr/Proposal-Project3/main/json/latarproposal.json'
 
 export let CardTujuan = `<div class="has-background-white p-8" style="border-radius: 4px;">
 <div class="is-relative is-inline-block mb-8">
