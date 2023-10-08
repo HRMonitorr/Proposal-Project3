@@ -21,9 +21,7 @@ export let LatarBelakang = `
 <p class="mb-10 subtitle has-text-white has-mw-lg mx-auto" style="text-align: justify;">#latarbelakang#</p>
 `
 export let CardTemplate = `
-</div>
 <br><br>
-<div class="mt-2">
 <div><b>Name:</b>
     <div>#nama#</div>
 </div>
@@ -34,6 +32,5 @@ export let CardTemplate = `
 <br>
 <div><b>NPM:</b>
     <div>#npm#</div>
-</div>
 </div>
 `
