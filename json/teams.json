@@ -1,15 +1,15 @@
 [
     {
-      "imgurl": "url_gambar_1.jpg",
-      "nama": "Nama Mahasiswa 1",
-      "npm": "NPM 1",
-      "kelas": "Kelas 1"
+      "imgurl": "images/rofi.jpg",
+      "nama": "Haris Riyoni",
+      "npm": "1214047",
+      "kelas": "3A Informatic Engineering"
     },
     {
-      "imgurl": "url_gambar_2.jpg",
+      "imgurl": "haris.jpg",
       "nama": "Nama Mahasiswa 2",
-      "npm": "NPM 2",
-      "kelas": "Kelas 2"
+      "npm": "1214017",
+      "kelas": "3A Informatic Engineering"
     }
   ]
   
