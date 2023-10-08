@@ -1,0 +1,15 @@
+[
+    {
+      "imgurl": "url_gambar_1.jpg",
+      "nama": "Nama Mahasiswa 1",
+      "npm": "NPM 1",
+      "kelas": "Kelas 1"
+    },
+    {
+      "imgurl": "url_gambar_2.jpg",
+      "nama": "Nama Mahasiswa 2",
+      "npm": "NPM 2",
+      "kelas": "Kelas 2"
+    }
+  ]
+  
