@@ -32,24 +32,24 @@ export function TujuanAbout(value){
 export function ImgTeams(value){
     let content=CardTemplate.replace("#imgUrl#",value.imgurl);
     console.log(content);
-    addInner("card-container", content);
+    addInner("cardnya", content);
 }
 
 export function NamaTeams(value){
     let content=CardTemplate.replace("#nama#",value.nama);
     console.log(content);
-    addInner("card-container", content);
+    addInner("cardnya", content);
 }
 
 export function NpmTeams(value){
     let content=CardTemplate.replace("#npm#",value.npm);
     console.log(content);
-    addInner("card-container", content);
+    addInner("cardnya", content);
 }
 export function KelasTeams(value){
     let content=CardTemplate.replace("#kelas#",value.kelas);
     console.log(content);
-    addInner("card-container", content);
+    addInner("cardnya", content);
 }
 
 

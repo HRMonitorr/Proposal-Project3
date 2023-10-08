@@ -3,7 +3,7 @@ export let TitleTemplate = `
 </br>
 `
 export let JSONlink = 'https://raw.githubusercontent.com/HRMonitorr/Proposal-Project3/main/json/latarproposal.json'
-export let JSONTeams = 'https://raw.githubusercontent.com/HRMonitorr/Proposal-Project3/main/json/latarproposal.json'
+export let JSONTeams = 'https://raw.githubusercontent.com/HRMonitorr/Proposal-Project3/main/json/teams.json'
 
 export let CardTujuan = `<div class="has-background-white p-8" style="border-radius: 4px;">
 <div class="is-relative is-inline-block mb-8">
@@ -20,18 +20,27 @@ export let LatarBelakang = `
 <p class="mb-10 subtitle has-text-white has-mw-lg mx-auto" style="text-align: justify;">#latarbelakang#</p>
 `
 export let CardTemplate = `
-<div class="card">
-  <div class="card-image">
-    <figure class="image is-4by3">
-      <img src="#imgUrl#" alt="#nama#">
-    </figure>
-  </div>
-  <div class="card-content">
-    <div class="content">
-      <h2 class="title is-size-4">#nama#</h2>
-      <p class="subtitle">#npm#</p>
-      <p class="subtitle">#kelas#</p>
-    </div>
-  </div>
+<img id="#gambar#" src="" alt="#gambar#" class="w-48 h-48 rounded-full" onclick="zoomIn()">
 </div>
-`;
+<br><br>
+<div class="mt-2">
+<div><b>Name:</b>
+    <div>#nama#</div>
+</div>
+<br>
+<div><b>Class:</b>
+    <div>#kelas#</div>
+</div>
+<br>
+<div><b>NPM:</b>
+    <div>#npm#</div>
+</div>
+</div>
+<br><br><br>
+<div class="social-icons">
+<a href="#" class="icon"><i class="fa fa-facebook"></i></a>
+<a href="#" class="icon"><i class="fa fa-twitter"></i></a>
+<a href="#" class="icon"><i class="fa fa-linkedin"></i></a>
+<a href="#" class="icon"><i class="fa fa-instagram"></i></a>
+</div>
+`
